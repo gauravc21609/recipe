@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Young Serif", serif;
 }
 
 :root {
@@ -22,15 +21,14 @@
 }
 
 @font-face {
-  font-family: "Young Serif", serif;
-  src: url(https://fonts.google.com/specimen/Young+Serif);
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Outfit", serif;
-  src: url(https://fonts.google.com/specimen/Outfit);
-  font-weight: 400, 600, 700;
+  font-family: "Outfit-Regular";
+  src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf);
 }
 
 html,
