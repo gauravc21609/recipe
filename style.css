@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Young Serif", serif;
+}
+
+:root {
+  /* Primary */
+
+  --other-heading: hsl(14, 45%, 36%);
+  --prp-colr: hsl(332, 51%, 32%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --bg-colr: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+  font-family: "Young Serif", serif;
+  src: url(https://fonts.google.com/specimen/Young+Serif);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit", serif;
+  src: url(https://fonts.google.com/specimen/Outfit);
+  font-weight: 400, 600, 700;
+}
+
+html,
+body {
+  width: 100vw;
+  background-color: hsl(30, 54%, 90%);
+  overflow-x: hidden;
+}
+
+.content {
+  width: min(40rem, 100vw);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  margin: 4rem auto;
+  border: 1px solid hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+}
+
+header {
+  width: min(37rem, 100%);
+  height: 12rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main h1 {
+  margin: 0.8em 0;
+  color: hsl(24, 5%, 18%);
+  font-family: "Outfit", serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: var(--WengeBrown);
+  font-family: "Outfit";
+}
+
+.preparation {
+  background-color: hsl(30, 54%, 90%);
+  padding: 1em;
+  margin: 2em 0;
+  width: 100%;
+  border-radius: 12px;
+  height: min(9rem, 12rem);
+}
+
+.preparation h3{
+  color: var( --prp-colr);
+}
+
+
+ul, ol{
+  padding-left: 1.5em;
+  margin: .8em 0;
+}
+
+li{
+  margin: .5em 0;
+}
+
+.preparation li::marker{
+  color: var( --prp-colr);
+}
+
+span{
+  color: var(--WengeBrown);
+  font-family: "Outfit";
+  font-weight: 600;
+}
+
+.Ingredients{
+  height: min(10rem, 15rem);
+  margin-bottom: 2em ;
+  width: 100%;
+  height: min();
+}
+
+h2{
+  color: var(--other-heading);
+  font-weight: 700;
+  margin: .6em 0;
+}
+
+hr{
+  color: var(--LightGrey);
+}
+
+.instructions{
+  margin: 2em 0;
+}
+
+.instructions li{
+   font-family: "Outfit";
+}
+
+.instructions li::marker{
+  padding-left: 1em;
+  color: var(--other-heading);
+}
+
+.instructions span{
+  font-weight: 600;
+  color: var(--DarkCharcoal);
+}
+
+.nutrition{
+  margin-top: 2em;
+}
+
+.nutrition > p{
+ margin: .6em 0;
+}
+
+.nutrition div{
+ display: grid;
+ grid-template-columns: auto auto;
+}
+
+.nutrition div >p{
+  padding: .5em 0;
+  border-bottom: 1px solid var(--LightGrey);
+} 
+
+.nutrition span{
+  color: var(--other-heading);
+  font-weight: 600;
+}
